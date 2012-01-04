@@ -59,7 +59,7 @@ int main()
 	// Eliminate too short or too long contours
 	int cmin= 100;  // minimum contour length
 	int cmax= 1000; // maximum contour length
-	std::vector<std::vector<cv::Point>>::const_iterator itc= contours.begin();
+        std::vector<std::vector<cv::Point>>::iterator itc= contours.begin();
 	while (itc!=contours.end()) {
 
 		if (itc->size() < cmin || itc->size() > cmax)
