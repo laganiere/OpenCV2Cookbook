@@ -47,7 +47,7 @@ int main()
 	cv::imshow("Reference Hist",h.getHistogramImage(imageROI));
 
 	// Create the objectfinder
-	ContentFinder finder;
+        ObjectFinder finder;
 	finder.setHistogram(hist);
 
 	finder.setThreshold(-1.0f);
